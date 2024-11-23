@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import {HeaderComponent} from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [HeaderComponent],
+  template: `<app-header></app-header>`,
+  styles: ''
 })
 export class AppComponent {
-  title = 'my-portfolio-frontend-angular';
+  title = 'my-portfolio-frontend';
 }
